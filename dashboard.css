@@ -1,0 +1,123 @@
+/* Navigation */
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand { font-weight: 800; font-size: 1.25rem; }
+.nav-user { display: flex; align-items: center; gap: 1rem; }
+.user-email { font-size: 0.875rem; color: var(--text-muted); }
+
+/* Main Dashboard Structure */
+.main-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Stats Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  background: #f1f5f9;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+}
+
+.stat-value { font-size: 1.5rem; font-weight: 700; }
+.stat-label { font-size: 0.875rem; color: var(--text-muted); }
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-box { flex: 1; min-width: 250px; }
+.search-box input { width: 100%; }
+
+/* Grid of Boxes */
+.section-title { font-size: 1.25rem; margin-bottom: 1rem; }
+
+.boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.box-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.box-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.box-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.box-title { font-weight: 700; font-size: 1.1rem; }
+.box-meta { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.5rem; }
+
+.box-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Table Design inside Modal */
+.table-responsive { overflow-x: auto; margin-top: 1rem; }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-table th { font-size: 0.875rem; color: var(--text-muted); }
+
+.text-right { text-align: right; }
+.justify-center { justify-content: center; }
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+.empty-icon { font-size: 3rem; margin-bottom: 0.5rem; }
